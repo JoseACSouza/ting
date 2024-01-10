@@ -11,6 +11,7 @@ class Queue(AbstractQueue):
 
     def enqueue(self, value, name=""):
         self._data.append(value)
+
         if name:
             self._txt_processed.add(name)
         else:
